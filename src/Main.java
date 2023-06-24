@@ -26,5 +26,5 @@ return #
 solution a + b = c --> convert to binary
 convertSumToBinary(convertToInt(a) + convertToInt(b) = c)
 
-THIS IS OBVIOUSLY NOT THE ANSWER BUT I HAD TO AT LEAST TRY TO USE MY BRAIN
+THIS IS OBVIOUSLY NOT THE ANSWER BUT I HAD TO AT LEAST TRY TO USE MY BRAIN.
  */
