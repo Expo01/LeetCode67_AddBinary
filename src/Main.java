@@ -34,13 +34,28 @@ class Solution {
         // using '1' and '11' as an example.  first place 1+1 = 2. sum = 1 first place = 0. second place 1 + 1 (carried remainder) = 2
         // sum = 1. seecond place = 0. carry the one and append. sb = 001. reverse --> 100 meaning 4 place full, 2 and 1 places empty
         return sb.reverse().toString();
+        // could also have made i and j zero originally and said while i>= a.length-1 and same for j and incremented instead
+        // of deecremeented to avoid the rreverse funtion? NOPE. because then we'd have to add starting with greatest place value
+        // which doesn't allow carrying of value
     }
+
+    // Given strings 'a' and 'b' which are binary representations of integers, return a string of the summed binary strings
+    // define int variables i and j as the max indexes of string a and string b at length-1
+    // create empty stringBuidler
+    // create int sum variablee = 0;
+    // while either i or j != 0, find the value (0 or 1) at that index in the string and and increment sum by the found value
+    // such as if(i >= 0) sum += a.chartAt(i) - '0'
+    // append stringBuildeer by sum%2 to get remainder for that place value
+    // redefine sum to carry value into next place --> sum /= 2
+    // decrement i and
+    // returrn sb.reverse().toString();
 }
 
 
 
 
 /*
+THIS IS OBVIOUSLY NOT THE ANSWER BUT I HAD TO AT LEAST TRY TO USE MY BRAIN.
  - we are getting two binary strings. converting to their int value, adding then returning sum in binary. 2 binary conversions
  - '11' binary means the (2^0) 1 is filled and (2^1) 1 is filled such that 3 - 2 = 1, 1-1 = 0. '3' in binary == 11
  - 1 is the binary of 1 sincnee (2^0 = 1).
@@ -59,5 +74,6 @@ return #
 solution a + b = c --> convert to binary
 convertSumToBinary(convertToInt(a) + convertToInt(b) = c)
 
-THIS IS OBVIOUSLY NOT THE ANSWER BUT I HAD TO AT LEAST TRY TO USE MY BRAIN.
+
  */
+//
